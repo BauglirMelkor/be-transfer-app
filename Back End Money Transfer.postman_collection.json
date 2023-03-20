@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "32493bfb-e53b-467f-93b8-a9c86da0e3d6",
+		"name": "Back End Money Transfer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Transfer Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"allowanceAccountNumber\":\"a1\",\n    \"restaurantAccountNumber\":\"r1\",\n    \"amount\":5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
